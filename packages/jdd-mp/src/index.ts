@@ -6,3 +6,5 @@ interface demo {
   a: string
 }
 export { func }
+
+

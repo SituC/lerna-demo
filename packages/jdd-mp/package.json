@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "dev": "rollup -w -c",
-    "build": "rollup -c -v"
+    "build": "rollup -c -v",
+    "test": "husky"
   },
   "keywords": [],
   "author": "",
