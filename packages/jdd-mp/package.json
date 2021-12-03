@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c -v",
-    "test": "husky"
+    "test": "husky",
+    "precommit": "lint-staged"
   },
   "keywords": [],
   "author": "",
