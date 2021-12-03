@@ -3,6 +3,6 @@ const func = (a: string): demo => {
   return { a }
 };
 interface demo {
-  a: string;
+  a: string
 }
-export { func };
+export { func }
