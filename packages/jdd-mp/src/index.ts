@@ -3,9 +3,9 @@ const func = (a:string):demo => {
   return { a }
 };
 
-
 interface demo {
   a: string
   
 }
 export { func }
+
