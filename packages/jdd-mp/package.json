@@ -41,6 +41,8 @@
   },
   "lint-staged": {
     "*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write",
       "node --max_old_space_size=8192 ./node_modules/.bin/prettier -w",
       "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color",
       "git add"
