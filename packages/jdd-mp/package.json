@@ -11,8 +11,7 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c -v",
-    "test": "husky",
-    "precommit": "lint-staged"
+    "precommit": "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color"
   },
   "keywords": [],
   "author": "",
@@ -42,8 +41,8 @@
   },
   "lint-staged": {
     "*.{ts,js}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/prettier -w",
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color",
+      "node ./node_modules/.bin/prettier -w",
+      "node ./node_modules/.bin/eslint --fix --color",
       "git add"
     ]
   }
