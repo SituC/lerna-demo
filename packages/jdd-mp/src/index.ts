@@ -1,5 +1,5 @@
 const func = (a:string):demo => {
-  console.log('123')
+  console.log('123');
   return { a }
 
   console.log('123')
